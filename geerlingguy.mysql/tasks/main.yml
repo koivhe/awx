@@ -8,7 +8,7 @@
   static: no
 
 - include: setup-Debian.yml
-  when: ansible_os_family == 'Debian'
+  when: ansible_os_family == 'Debian' or ansible_os_family == 'Ubuntu'
   static: no
 
 - include: setup-Archlinux.yml
